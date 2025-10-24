@@ -22,6 +22,14 @@ const envs: Record<string, Partial<StackInput>> = {
   // },
   dev: {
     // Parameters for development environment
+    "ragKnowledgeBaseEnabled": true,
+    "ragKnowledgeBaseId": null,
+    "ragKnowledgeBaseStandbyReplicas": false,
+    "ragKnowledgeBaseAdvancedParsing": false,
+    "ragKnowledgeBaseAdvancedParsingModelId": "anthropic.claude-3-sonnet-20240229-v1:0",
+    "embeddingModelId": "amazon.titan-embed-text-v2:0",
+    "rerankingModelId": "amazon.rerank-v1:0",
+    "queryDecompositionEnabled": true
   },
   staging: {
     // Parameters for staging environment
